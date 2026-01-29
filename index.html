@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kohashi</title>
+    <style>
+        /* 全体のレイアウト設定 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* 左右中央 */
+            align-items: center;     /* 上下中央 */
+            background-color: #fffaf0; /* 背景色（お好みで変更してください） */
+        }
+
+        /* 写真のコンテナ */
+        .photo-container {
+            max-width: 90%;  /* 画面幅の90%までに制限 */
+            max-height: 90%; /* 画面高さの90%までに制限 */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* 軽い影をつけて浮かせる */
+            background-color: #fff;
+            padding: 0%;   /* 写真の周りの白いフチ */
+            line-height: 0;  /* 余計な隙間を消す */
+            border-radius: 100px;
+        }
+
+        /* 写真自体の設定 */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 100px; /* この数字を大きくするともっと丸くなります */
+}
+/* 親要素（画像と文字を囲む箱）の設定 */
+.photo-container {
+  position: relative; /* これを書くと、中の文字がこの箱を基準に動けます */
+  display: inline-block; /* 画像のサイズに箱を合わせる */
+}
+
+/* 画像の上に載せる文字の設定 */
+.photo-overlay {
+  position: absolute; /* 絶対配置 */
+  top: 700px;          /* 上から20pxの位置 */
+  left: 400px;
+  right: 0;           /* 左右いっぱいに広げて中央寄せしやすくする */
+  text-align: center;
+  color: white;       /* 写真が暗めなら白文字が映えます */
+}
+
+.photo-overlay h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.instagram-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+
+   <div class="photo-container">
+  <img src="ウェブ１web.jpg">
+
+  <div class="photo-overlay">
+    <h2></h2>
+    <a href="https://www.instagram.com/kohashiarito" class="instagram-link">＜instagram＞</a>
+  </div>
+</div>
+</body>
+</html>
