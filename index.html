@@ -47,12 +47,12 @@
 
 /* 画像の上に載せる文字の設定 */
 .photo-overlay {
-  position: absolute; /* 絶対配置 */
-  top: 700px;          /* 上から20pxの位置 */
-  left: 400px;
-  right: 0;           /* 左右いっぱいに広げて中央寄せしやすくする */
-  text-align: center;
-  color: white;       /* 写真が暗めなら白文字が映えます */
+ position: absolute;
+    top: 50%;    /* 上から50%の位置（真ん中）にする */
+    left: 50%;   /* 左から50%の位置にする */
+    transform: translate(-50%, -50%); /* 自分の大きさ分を戻して、完全に真ん中に合わせる魔法 */
+    text-align: center;
+    width: 100%; /* 横幅いっぱいにして、中央に寄せやすくする */
 }
 
 .photo-overlay h2 {
